@@ -1,15 +1,11 @@
+import people.Manager
+import people.Specialist
+
 fun main() {
-    println("New Account")
-    val marcos = Account("Marcos", 100, "001")
-    println(marcos.toString())
+    val worker = Manager("Silvia", "001.001.001-01", 2500.0)
+    println(worker)
 
-    println("New Account")
-    val luiza = Account("Luiza", 101, "001")
-    println(luiza.toString())
-
-    marcos.deposit(100.0)
-    marcos.transfer(luiza, 50.0)
-
-    println(marcos.toString())
-    println(luiza.toString())
+    println()
+    val specialist = Specialist("Marcos", "002.002.002-02", 14000.0)
+    println(specialist)
 }

@@ -1,8 +1,10 @@
-class Account(
-    val holder: String,
-    val numberAccount: Int,
-    val numberAgency: String) {
+package product
 
+class Account(
+    private val holder: String,
+    private val numberAccount: Int,
+    private val numberAgency: String
+) {
     private var balance = 0.0
         set(value) {
             if (value >= 0)
@@ -34,8 +36,7 @@ class Account(
     }
 
     override fun toString(): String {
-        return "=====================" + "\n" +
-                "Account: ${this.numberAccount}" + "\n" +
+        return "product.Account: ${this.numberAccount}" + "\n" +
                 "Agency: ${this.numberAgency}" + "\n" +
                 "Holder: ${this.holder}" + "\n" +
                 "Balance: ${this.balance}"
