@@ -1,6 +1,6 @@
 package product
 
-class Account(
+abstract class Account(
     private val holder: String,
     private val numberAccount: Int,
     private val numberAgency: String
@@ -36,7 +36,7 @@ class Account(
     }
 
     override fun toString(): String {
-        return "product.Account: ${this.numberAccount}" + "\n" +
+        return "Account Number: ${this.numberAccount}" + "\n" +
                 "Agency: ${this.numberAgency}" + "\n" +
                 "Holder: ${this.holder}" + "\n" +
                 "Balance: ${this.balance}"
