@@ -1,7 +1,9 @@
-package product
+package model.product
+
+import model.people.Client
 
 abstract class Account(
-    private val holder: String,
+    private val holder: Client,
     private val numberAccount: Int,
     private val numberAgency: String
 ) {

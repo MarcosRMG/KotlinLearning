@@ -1,4 +1,4 @@
-package people
+package model.people
 
 abstract class Employee(
     private val name: String,

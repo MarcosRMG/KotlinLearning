@@ -1,7 +1,9 @@
-package product
+package model.product
+
+import model.people.Client
 
 class CurrentAccount(
-    holder: String,
+    holder: Client,
     numberAccount: Int,
     numberAgency: String
 ) : Account(holder, numberAccount, numberAgency) {

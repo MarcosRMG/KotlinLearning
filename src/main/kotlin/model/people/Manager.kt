@@ -1,4 +1,4 @@
-package people
+package model.people
 
 class Manager (
     name: String,
