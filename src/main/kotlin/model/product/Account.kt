@@ -13,7 +13,7 @@ abstract class Account(
                 field = value
         }
 
-    private fun checkBalance(value: Double):  Boolean {
+    private fun checkBalance(value: Double): Boolean {
         if (this.balance >= value) {
             return true
         }
@@ -40,7 +40,7 @@ abstract class Account(
     override fun toString(): String {
         return "Account Number: ${this.numberAccount}" + "\n" +
                 "Agency: ${this.numberAgency}" + "\n" +
-                "Holder: ${this.holder}" + "\n" +
+                "Holder: ${this.holder.getName()}" + "\n" +
                 "Balance: ${this.balance}"
     }
 }

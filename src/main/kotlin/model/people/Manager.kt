@@ -17,7 +17,7 @@ class Manager (
         }
 
     override fun toString(): String {
-        return super.toString() +
+        return super.toString() + "\n" +
                 "Bonus: ${this.bonus}"
     }
 }

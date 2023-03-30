@@ -16,9 +16,17 @@ abstract class Employee(
     }
 
     override fun toString(): String {
-        return "Name: ${this.name}" + "\n" +
-                "CPF: ${this.cpf}" + "\n" +
-                "Role: ${this.role.name}" + "\n" +
-                "Salary: $${this.salary}" + "\n"
+        return """
+                    Name: ${this.name}
+                    CPF: ${this.cpf} 
+                    Role: ${this.role.name} 
+                    Salary: $${this.salary} """.trimIndent()
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (other != null && other is Employee) {
+            return this.cpf == other.cpf
+        }
+        return false
     }
 }
